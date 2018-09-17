@@ -1,0 +1,73 @@
+body{
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  margin:0;
+  padding:0;
+  background:#F05F40;
+}
+
+.nav-link{
+  font-size:14.4px;
+  font-weight: 700;
+}
+
+
+#home-section{
+  background-image: url(../img/banner.jpeg);
+  min-height:640px;
+}
+
+#home-section .darkoverlay{
+  background: rgba(0,0,0,0.6);
+  height:640px;
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+}
+.home-inner{
+  opacity: 0.8;
+  padding-top:150px;
+}
+.home-inner h1{
+  font-size:48px;
+  color:F0FFF0;
+}
+
+/* .home-inner h1::after{
+  
+}
+ */
+
+ hr {
+
+  max-width: 50px;
+  border-width: 3px;
+  border-color: #f05f40;
+
+}
+
+#about-us hr {
+
+  max-width: 50px;
+  border-width: 3px;
+  border-color: #fff;
+
+}
+#home-section button{
+  background:#F05F40;
+  color:white;
+  }
+  
+  #home-section button:hover{
+    background: white;
+    color:black;
+  }
+
+  h3 {
+    font-family:'Oleo Script', Helvetica, sans-serif;
+    color: #F05F40;
+    text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+  }
+  h3:hover{
+    color:#FF5F40;
+  }
