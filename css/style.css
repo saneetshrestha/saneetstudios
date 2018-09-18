@@ -1,8 +1,14 @@
+html{
+  padding: 0;
+  margin:0;
+
+}
 body{
   font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
   margin:0;
   padding:0;
   background:#F05F40;
+ 
 }
 
 .nav-link{
@@ -10,42 +16,58 @@ body{
   font-weight: 700;
 }
 
-
-#home-section{
-  background-image: url(../img/banner.jpeg);
+ #home-section{
+  background-image: linear-gradient(to right,rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../img/banner.jpeg);
   min-height:640px;
-}
+  background-position: center center;
+  background-size: cover;
+} 
+.bg-transparent{
+opacity: 1;
+}/* <!--Makes image responsive--> */
 
-#home-section .darkoverlay{
+ /* #home-section .darkoverlay{
   background: rgba(0,0,0,0.6);
-  height:640px;
+  
   position: absolute;
   top:0;
   left:0;
-  width:100%;
-}
+  
+  min-height:640px;
+  
+
+background-position: center center;
+
+background-size: cover;
+}  */
 .home-inner{
   opacity: 0.8;
   padding-top:150px;
 }
-.home-inner h1{
+.home-inner h1,.downloadNow h1{
   font-size:48px;
   color:F0FFF0;
 }
+
 
 /* .home-inner h1::after{
   
 }
  */
 
- hr {
+ hr{
 
   max-width: 50px;
   border-width: 3px;
   border-color: #f05f40;
 
 }
-
+#portfolio img{
+  
+    /* Just in case there are inline attributes */
+    width: 100% !important;
+    height: auto !important;
+}
 #about-us hr {
 
   max-width: 50px;
@@ -63,11 +85,52 @@ body{
     color:black;
   }
 
-  h3 {
+  .navbar-brand h3 {
     font-family:'Oleo Script', Helvetica, sans-serif;
     color: #F05F40;
     text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+    font-size:40px;
   }
   h3:hover{
     color:#FF5F40;
   }
+  .default-navbar.scrolled{
+    transition:500ms ease;
+    background: rgba(0,0,0,0.9);
+    color:white;
+  }
+  
+  .navbar-brand.scrolled {
+    
+    color:white;
+  }
+
+.nav-link.scrolled{
+  color:white !important;
+}
+
+.fas,.fab{
+  color:#f05f40;
+}
+
+.portfolio img{
+  width:100%;
+  height:auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(240,95,64,0.7);
+}
+
+.portfolio1:hover .overlay{
+  opacity:1;
+}
