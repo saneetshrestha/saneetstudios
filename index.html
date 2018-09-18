@@ -18,7 +18,7 @@
   
   <nav class="navbar navbar-expand-sm navbar-dark default-navbar fixed-top" id="navigate">
       <div class="container ">
-    <a href="index.html" class="navbar-brand px-2 display-1" style="font-family: 'Amatic SC', cursive; font-size: 40px; color:#f05f40;"><strong><h3>Saneet Studios</h3></strong></a>
+    <a href="index.html" class=" navbar-brand px-2 display-1" style="font-family: 'Amatic SC', cursive; font-size: 40px; color:#f05f40;"><strong><h3 class="logo">Saneet Studios</h3></strong></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarBurger" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -150,11 +150,11 @@
       <p class="lead">Want to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
       <div class="d-flex justify-content-around">
         <div class="align-self-end">
-            <i class="fas fa-phone fa-4x pt-3"></i>
+            <i class="fas ic5 fa-phone fa-4x pt-3"></i>
             <h4 class="pt-2">123-456-789</h4>
         </div>
         <div class="align-self-end align-items-end">
-            <i class="fas fa-envelope fa-4x" ></i>
+            <i class="fas fa-envelope fa-4x ic6" ></i>
             <h4 class="pt-3">someone@somesite.com</h4>
         </div>
       </div>
@@ -211,10 +211,55 @@ $(document).ready(function(){
     </script>
 
 <script>
+window.sr=ScrollReveal();
 ScrollReveal().reveal('.ic1', { delay: 300 });
 ScrollReveal().reveal('.ic2', { delay: 400 });
 ScrollReveal().reveal('.ic3', { delay: 500 });
 ScrollReveal().reveal('.ic4', { delay: 600 });
+sr.reveal('.btn',{
+  duration: 1500,
+  origin:"bottom",
+  distance:'100px'
+});
+sr.reveal('.logo',{
+  duration: 1500,
+  origin:"top",
+  distance:'100px'
+});
+sr.reveal('.ic1',{
+  duration: 1500,
+  origin:"top",
+  distance:'100px'
+});
+
+sr.reveal('.ic2',{
+  duration: 1500,
+  origin:"bottom",
+  distance:'100px'
+});
+
+sr.reveal('.ic3',{
+  duration: 1500,
+  origin:"top",
+  distance:'100px'
+});
+
+sr.reveal('.ic4',{
+  duration: 1500,
+  origin:"bottom",
+  distance:'100px'
+});
+
+sr.reveal('.ic5',{
+  duration: 1500,
+  origin:"top",
+  distance:'100px'
+});
+sr.reveal('.ic6',{
+  duration:1500,
+  origin:'bottom',
+  distance:'100px'
+})
 </script>
     
 </body>
