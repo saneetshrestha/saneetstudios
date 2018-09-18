@@ -97,10 +97,10 @@ background-size: cover;
   .default-navbar.scrolled{
     transition:500ms ease;
     background: rgba(0,0,0,0.9);
-    color:white;
+    
   }
   
-  .navbar-brand.scrolled {
+/*   .navbar-brand.scrolled {
     
     color:white;
   }
@@ -108,7 +108,7 @@ background-size: cover;
 .nav-link.scrolled{
   color:white !important;
 }
-
+ */
 .fas,.fab{
   color:#f05f40;
 }

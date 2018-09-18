@@ -10,13 +10,13 @@
     
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Document</title>
+    <title>Saneet Studios</title>
 </head>
-
+<body id="home" data-spy="scroll" data-target="#navigation1">
 <!---------------NAVIGATION BAR---------------------------------->
-<body>
+
   
-  <nav class="navbar navbar-expand-sm navbar-dark default-navbar fixed-top" id="navigate">
+  <nav class="navbar navbar-expand-sm navbar-dark default-navbar fixed-top" id="navigation1">
       <div class="container ">
     <a href="index.html" class=" navbar-brand px-2 display-1" style="font-family: 'Amatic SC', cursive; font-size: 40px; color:#f05f40;"><strong><h3 class="logo">Saneet Studios</h3></strong></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarBurger" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,10 +25,13 @@
 
     <div class="collapse navbar-collapse" id="navbarBurger">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item px-2"><a href="#" class="nav-link ">ABOUT</a></li>
-        <li class="nav-item px-2"><a href="#" class="nav-link">SERVICES</a></li>
-        <li class="nav-item px-2"><a href="#" class="nav-link">PORTFOLIO</a></li>
-        <li class="nav-item px-2"><a href="#" class="nav-link">CONTACT</a></li>
+        <li class="nav-item px-2">
+          <a class="nav-link" href="#home-section">HOME</a>
+        </li>
+        <li class="nav-item px-2"><a href="#about-us" class="nav-link ">ABOUT</a></li>
+        <li class="nav-item px-2"><a href="#services" class="nav-link">SERVICES</a></li>
+        <li class="nav-item px-2"><a href="#portfolio" class="nav-link">PORTFOLIO</a></li>
+        <li class="nav-item px-2"><a href="#contact" class="nav-link">CONTACT</a></li>
       </ul>
     </div>
   </div> 
@@ -58,7 +61,7 @@
   </div>
 </header>
 <!-------------------ABOUT------------------------------->
-<section id="about-us" class="my-5 text-center" >
+<section id="about-us" class="py-5 text-center" >
   <div class="container">
     <div class="row">
       <div class="col-md-8 mx-auto">
@@ -172,50 +175,51 @@
     </div>
   </div>
 </div>
-  <script
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script
 			  src="https://code.jquery.com/jquery-3.3.1.min.js"
 			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 			  crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <!--scroll reveal-->
 <script src="https://unpkg.com/scrollreveal"></script>
-<!-- <script>
-  const scroll=100;
+<script>
+const scroll=150;
 $(document).ready(function(){
   $(window).scroll(function(){
    var scrll=$(window).scrollTop();
 
    if(scrll>scroll){
    
-    $(('#navigate').css("background","rgba(0,0,0,0.9)")).fadeIn(200);
-    $('nav a').css("color","#fff");
-    $('.navbar-brand').css('color',"#fff;");
+    $('#navigation1').css({
+      "transition":"500ms ease",
+      "background":"rgba(0,0,0,0.9)"
+      
+      });
+   
 
   }
     else{
-      $('#navigate').css("background","transparent");
+      $('#navigation1').css("background","transparent");
     }
   
 })
 })
-  </script> -->
+  </script>
 
   <!------EASE IN NAVBAR BACKGROUND-->
-<script>
+<!-- <script>
     $(window).scroll(function(){
     $('nav').toggleClass('scrolled', $(this).scrollTop() > 85);
-    $('.nav-link').toggleClass('scrolled'.scrollTop())
+    $('#navigation1').toggleClass('scrolled'.scrollTop())
     });
-    </script>
-
+</script>  -->
+ 
 <script>
 window.sr=ScrollReveal();
-ScrollReveal().reveal('.ic1', { delay: 300 });
-ScrollReveal().reveal('.ic2', { delay: 400 });
-ScrollReveal().reveal('.ic3', { delay: 500 });
-ScrollReveal().reveal('.ic4', { delay: 600 });
+
 sr.reveal('.btn',{
   duration: 1500,
   origin:"bottom",
@@ -260,7 +264,29 @@ sr.reveal('.ic6',{
   origin:'bottom',
   distance:'100px'
 })
+
 </script>
-    
+<script>
+    //scroll spy
+$('body').scrollspy({target:'#navigation1'});
+
+
+//smooth scroll
+  const scrollValue=600;
+ $("#navigation1 a").on('click', function (event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+
+        const hash = this.hash;
+
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        },scrollValue, function () {
+
+          window.location.hash = hash;
+        });
+      }
+    });
+    </script>
 </body>
 </html>
