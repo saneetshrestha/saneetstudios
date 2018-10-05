@@ -1,6 +1,8 @@
+
 html{
   padding: 0;
   margin:0;
+  
 
 }
 body{
@@ -8,7 +10,8 @@ body{
   margin:0;
   padding:0;
   background:#F05F40;
- 
+  overflow-x: hidden;
+  
 }
 
 .nav-link{
@@ -21,6 +24,7 @@ body{
   min-height:640px;
   background-position: center center;
   background-size: cover;
+ 
 } 
 .bg-transparent{
 opacity: 1;
@@ -133,4 +137,27 @@ background-size: cover;
 
 .portfolio1:hover .overlay{
   opacity:1;
+}
+
+.btn.login{
+  background:#F05F40
+}
+.bton{
+  background-color: #f05f40; 
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.bton:hover{
+  background-color: rgb(241, 56, 14);
+}
+
+#loginModal{
+  overflow-y:hidden;
+  overflow-x: hidden;
 }
